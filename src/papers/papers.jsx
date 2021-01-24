@@ -3,6 +3,7 @@ import Loading from "../components/loading"
 import './paper.css'
 import axios from "axios"
 import { showContext, UPDATE_SHOW, UPDATE_INDEX } from './show'
+import papers from '../utils/data';
 const Papers = (props) => {
   const { show, dispatch } = useContext(showContext)
   const [paper, setPaper] = useState([])
@@ -29,7 +30,7 @@ const Papers = (props) => {
           name: "缘起",
           bg: "paper1",
           bgcolor: "rgba(40, 97, 167, .4)",
-          logo: require('../assets/imgs/nculogo.jpg'),
+          // logo: require('../assets/imgs/nculogo.jpg'),
           puzzle: require('../assets/imgs/yq.png'),
           ncolor: "#2861a1",
           color: "rgba(40, 97, 167, .7)",
@@ -234,9 +235,9 @@ const Papers = (props) => {
         </div>
         <div className="puzzle-after" id="unflip">
           <div className="puzzle-flip">
-            {show.index > 0 ? <img className="puzzle-bg" src={`http://antelope.fun/${paper[show.index - 1].id}.png`} /> : ""}
+            {/* {show.index > 0 ? <img className="puzzle-bg" src={`http://antelope.fun/${paper[show.index - 1].id}.png`} /> : ""} */}
             <img className="back" src={require("../assets/imgs/back.png")} onClick={unflip} />
-          </div>
+          </div> 
         </div>
       </div>
     )

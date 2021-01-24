@@ -1,4 +1,3 @@
-  
 import React, {Suspense, useEffect} from 'react';
 import ReactDOM from 'react-dom';
 import {
@@ -38,5 +37,5 @@ const Routers = () => {
       </Switch>
     </Router>
   )
-} 
+}
 ReactDOM.render(<Routers />, document.getElementById('root'));
