@@ -39,71 +39,71 @@ body {
   background: url(../assets/imgs/yuanqi.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  width: 85vw;
-  height: 58vh;
+  width: 95vw;
+  height: 72vh;
 }
 .paper2 {
   position: absolute;
   background: url(../assets/imgs/zuji.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  width: 85vw;
-  height: 58vh;
+  width: 95vw;
+  height: 72vh;
 }
 .paper3 {
   position: absolute;
   background: url(../assets/imgs/chengjiu.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  width: 85vw;
-  height: 60vh;
+  width: 98vw;
+  height: 70vh;
 }
 .paper4 {
   position: absolute;
   background: url(../assets/imgs/chujian.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  width: 85vw;
-  height: 60vh;
+  width: 95vw;
+  height: 72vh;
 }
 .paper5 {
   position: absolute;
   background: url(../assets/imgs/tixing.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  width: 85vw;
-  height: 60vh;
+  width: 95vw;
+  height: 72vh;
 }
 .paper6 {
   position: absolute;
   background: url(../assets/imgs/jianchi.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  width: 85vw;
-  height: 60vh;
+  width: 92vw;
+  height: 74vh;
 }
 .paper7 {
   position: absolute;
   background: url(../assets/imgs/xiaofei.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  width: 85vw;
-  height: 60vh;
+  width: 95vw;
+  height: 70vh;
 }
 .paper8 {
   position: absolute;
   background: url(../assets/imgs/yishi.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  width: 85vw;
-  height: 60vh;
+  width: 93vw;
+  height: 72vh;
 }
 .paper-name {
   margin: 7vh 0 0 12vw;
   font-family: jinkai;
 }
 .paper-name > span {
-  display: inline-block;
+  display:none;
   font-size: 35px;
   padding: 30px 25px 0px 150px;
   /* margin: 10px 100px 0px 180px; */
@@ -117,7 +117,8 @@ body {
 .context {
   font-family: jinkai;
   font-weight: bold;
-  padding: 0 14vw 12vw;
+  padding: 45vw 14vw 12vw;
+  padding-left: 15%;
   font-size: 4.5vw;
   line-height: 4vh;
 }

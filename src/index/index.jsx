@@ -53,7 +53,7 @@ const Index = () => {
     <div>
       <div id="loading"><Loading /></div>
       <div id="container" className="index-container" onClick={onBottom}>
-        <div className="index-title">2019<span className="index-flag">生成你的年度#TAG#</span><div style={{fontSize: "6vw"}}>(任意点击进入扭蛋机)</div></div>
+        <div className="index-title">2020<span className="index-flag">生成你的年度#TAG#</span><div style={{fontSize: "6vw"}}>(任意点击进入扭蛋机)</div></div>
         <div className="index-words">
           <div id="sentence1">
             你即将看到的是<span style={{ fontSize: "6.5vw" }}>家园扭蛋机</span>
@@ -64,7 +64,7 @@ const Index = () => {
             <p><span style={{ fontSize: "8vw", marginLeft: 20 }}>"咔擦"</span>一声</p>
           </div>
           <div id="sentence3">
-            <p>2019年</p>
+            <p>2020年</p>
             <p>那些或许被你忽视的小碎片</p>
             <p>就会<span style={{ fontSize: "8vw" }}>"砰"</span>的涌现</p>
             <p>月光下的足迹</p>

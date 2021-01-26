@@ -56,7 +56,7 @@ class Characters extends React.Component {
         }
       }
       if(data.page_1.join_year !== null) {
-        if(data.page_1.join_year == 2019) {
+        if(data.page_1.join_year == 2020) {
           this.setState({
             show2: require("../assets/imgs/tjhdxs.png")
           })
@@ -119,7 +119,7 @@ class Characters extends React.Component {
             }
           }
           if(data.page_1.join_year !== null) {
-            if(data.page_1.join_year == 2019) {
+            if(data.page_1.join_year == 2020) {
               this.setState({
                 show2: require("../assets/imgs/tjhdxs.png")
               })
