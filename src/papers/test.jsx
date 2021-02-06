@@ -15,33 +15,30 @@ const Show = (props) => {
       name: "缘起",
       bg: "paper1",
       bgcolor: "rgba(40, 97, 167, .4)",
-      // puzzle: require('../assets/imgs/yq.png'),
       ncolor: "#2861a1",
       color: "rgba(40, 97, 167, .7)",
       end: true,
-      context: <div>{data.page_1.join_year !== null?data.page_1.join_year:"没找到哦"}年{data.page_1.join_month!==null?data.page_1.join_month:"没找到哦"}月<br />南昌大学正式与你相遇<br />直到现在<br />校徽上的蓝色香樟<br />已经见证你{data.page_1.semester_spent!==null?data.page_1.semester_spent:"没找到哦"}个学期的大学生活</div>
+      context: <div>{data.page1.join_year !== null?data.page1.join_year:"没找到哦"}年{data.page1.join_month!==null?data.page1.join_month:"没找到哦"}月<br />南昌大学正式与你相遇<br />直到现在<br />校徽上的蓝色香樟<br />已经见证你{data.page1.semester_spent!==null?data.page1.semester_spent:"没找到哦"}个学期的大学生活</div>
     },
     {
       id: 2,
       name: "足迹",
       bg: "paper2",
       bgcolor: "rgba(111, 161, 106, .4)",
-      // puzzle: require('../assets/imgs/zj.png'),
       ncolor: "#6fa16a",
       color: "rgba(111, 161, 106, .7)",
       end: false,
-      context: <div>这个学期<br />你见过南大{data.page_3.pass_days!==null ? data.page_3.pass_days:"没找到哦"}个夜晚里形状各异的月亮<br />坐在教室里<br />听了{data.page_3.total_course_hours!==null ? data.page_3.total_course_hours:"没找到哦"}次上课铃</div>
+      context: <div>这个学期<br />你见过南大{data.page3.pass_days!==null ? data.page3.pass_days:"没找到哦"}个夜晚里形状各异的月亮<br />坐在教室里<br />听了{data.page3.total_course_hours!==null ? data.page3.total_course_hours:"没找到哦"}次上课铃</div>
     },
     {
       id: 2,
       name: "足迹",
       bg: "paper2",
       bgcolor: "rgba(111, 161, 106, .4)",
-      // puzzle: require('../assets/imgs/zj.png'),
       ncolor: "#6fa16a",
       color: "rgba(111, 161, 106, .7)",
       end: true,
-      context: <div>关于课堂的模样<br />你的体会或许<br />比全校{data.page_3.course_hours_defeat!==null?parseInt(data.page_3.course_hours_defeat):"没找到哦"}%<br />的同学更深</div>
+      context: <div>关于课堂的模样<br />你的体会或许<br />比全校{data.page3.course_hours_defeat!==null?parseInt(data.page3.course_hours_defeat):"没找到哦"}%<br />的同学更深</div>
     },
     {
       id: 3,
@@ -52,19 +49,17 @@ const Show = (props) => {
       ncolor: "#d8c34c",
       color: "rgba(216, 195, 76, .7)",
       end: false,
-      context: Boolean(data.page_4.if_grade_19) === true ? <div>在已经公布的期末成绩里<br />你考的最好的课程有：{data.page_4.page_4_data.top_three_courses!==null?data.page_4.page_4_data.top_three_courses.map((item, index)=>(<span key={index}><br />{item.class_name}</span>)):"没找到哦"}</div> : <div>星光不负赶路人<br />高达{data.page_4.page_4_data.credits_taken!==null ? data.page_4.page_4_data.credits_taken:"没找到哦"}的学分<br />没有辜负你<br />在专业排名前{data.page_4.page_4_data.gpa_rank!=null ? data.page_4.page_4_data.gpa_rank:"没找到哦"}%<br />{data.page_4.page_4_data.gpa!==null ? data.page_4.page_4_data.gpa: "没找到哦"}平均绩点<br />也在肯定着你的努力</div>
+      context: Boolean(data.page4.if_grade_20) === true ? <div>在已经公布的期末成绩里<br />你考的最好的课程有：{data.page4.page_4_data.top_three_courses!==null?data.page4.page_4_data.top_three_courses.map((item, index)=>(<span key={index}><br />{item.class_name}</span>)):"没找到哦"}</div> : <div>星光不负赶路人<br />高达{data.page4.page_4_data.credits_taken!==null ? data.page4.page_4_data.credits_taken:"没找到哦"}的学分<br />没有辜负你<br />这个学期的课业圆满完成<br />{data.page4.page_4_data.gpa!==null ? data.page4.page_4_data.gpa: "没找到哦"}平均绩点<br />也在肯定着你的努力</div>
     },
     {
       id: 3,
       name: "成就",
       bg: "paper3",
       bgcolor: "rgba(216, 195, 76, .4)",
-      // logo: "",
-      // puzzle: require('../assets/imgs/cj.png'),
       ncolor: "#d8c34c",
       color: "rgba(216, 195, 76, .7)",
       end: true,
-      context: Boolean(data.page_4.if_grade_19) === true ? <div>最高的那门{data.page_4.page_4_data.top_three_courses[0].class_name!==null ? data.page_4.page_4_data.top_three_courses[0].class_name : "没找到哦"}<br />超过了全专业{data.page_4.page_4_data.course_defeat_rank!==null ? data.page_4.page_4_data.course_defeat_rank : "没找到哦"}%的同学<br />不用担心啦<br />这次期末一定能过</div> : <div>不知不觉中<br />你已经修满了{data.page_4.page_4_data.credits_taken!==null?data.page_4.page_4_data.credits_taken:"没找到哦"}个学分<br />{data.page_4.page_4_data.gpa!==null?data.page_4.page_4_data.gpa:"没找到哦"}的平均绩点<br />为你的大学生活<br />留下了珍贵的足迹<br />加油！<br />未来的你<br />一定还有着更好的模样</div>
+      context: Boolean(data.page4.if_grade_20) === true ? <div>最高的那门{data.page4.page_4_data.top_three_courses[0].class_name!==null ? data.page4.page_4_data.top_three_courses[0].class_name : "没找到哦"}<br />超过了全专业{data.page4.page_4_data.course_defeat_rank!==null ? data.page4.page_4_data.course_defeat_rank : "没找到哦"}%的同学<br />不用担心啦<br />这次期末一定能过</div> : <div>不知不觉中<br />你已经修满了{data.page4.page_4_data.credits_taken!==null?data.page4.page_4_data.credits_taken:"没找到哦"}个学分<br />{data.page4.page_4_data.gpa!==null?data.page4.page_4_data.gpa:"没找到哦"}的平均绩点<br />为你的大学生活<br />留下了珍贵的足迹<br />加油！<br />未来的你<br />一定还有着更好的模样</div>
     },
     {
       id: 4,
@@ -72,11 +67,10 @@ const Show = (props) => {
       bg: "paper4",
       bgcolor: "rgba(236, 179, 181, .4)",
       logo: "",
-      // puzzle: require('../assets/imgs/chuj.png'),
       ncolor: "#ecb3b5",
       color: "rgba(236, 179, 181, .7)",
       end: false,
-      context: <div>{data.page_2.join_year !== null ? data.page_2.join_year :"没找到哦"}年9月{data.page_2.first_class_day!==null ? data.page_2.first_class_day : "没找到哦"}日<br />你{data.page_2.first_class_address!==null && data.page_2.first_class_address !== "NULL" ? "在" + data.page_2.first_class_address : ""}上了大学的第一堂课</div>
+      context: <div>{data.page2.join_year !== null ? data.page2.join_year :"没找到哦"}年9月{data.page2.first_class_day!==null ? data.page2.first_class_day : "没找到哦"}日<br />你{data.page2.first_class_address!==null && data.page2.first_class_address !== "NULL" ? "在" + data.page2.first_class_address : ""}上了大学的第一堂课</div>
     },
     {
       id: 4,
@@ -84,11 +78,10 @@ const Show = (props) => {
       bg: "paper4",
       bgcolor: "rgba(236, 179, 181, .4)",
       logo: "",
-      // puzzle: require('../assets/imgs/chuj.png'),
       ncolor: "#ecb3b5",
       color: "rgba(236, 179, 181, .7)",
       end: true,
-      context: <div>在那儿<br />{data.page_2.first_class_teacher!==null ? data.page_2.first_class_teacher : "没找到哦"}老师与你初见<br />也许在毕业季<br />你还会想重温那天那节<br />{data.page_2.first_class_name !==null? data.page_2.first_class_name : "没找到哦"}</div>
+      context: <div>在那儿<br />{data.page2.first_class_teacher!==null ? data.page2.first_class_teacher : "没找到哦"}老师与你初见<br />也许在毕业季<br />你还会想重温那天那节<br />{data.page2.first_class_name !==null? data.page2.first_class_name : "没找到哦"}</div>
     },
     {
       id: 5,
@@ -96,7 +89,6 @@ const Show = (props) => {
       bg: "paper5",
       bgcolor: "rgba(117, 84, 160, .4)",
       logo: "",
-      // puzzle: require('../assets/imgs/tx.png'),
       ncolor: "#7554a0",
       color: "rgba(117, 84, 160, .7)",
       end: true,
@@ -108,7 +100,6 @@ const Show = (props) => {
       bg: "paper6",
       bgcolor: "rgba(100, 161, 174, .4)",
       logo: "",
-      // puzzle: require('../assets/imgs/jc.png'),
       ncolor: "#64a1ae",
       color: "rgba(100, 161, 174, .7)",
       end: false,
@@ -120,7 +111,6 @@ const Show = (props) => {
       bg: "paper6",
       bgcolor: "rgba(100, 161, 174, .4)",
       logo: "",
-      // puzzle: require('../assets/imgs/jc.png'),
       ncolor: "#64a1ae",
       color: "rgba(100, 161, 174, .7)",
       end: false,
@@ -131,8 +121,6 @@ const Show = (props) => {
       name: "坚持",
       bg: "paper6",
       bgcolor: "rgba(100, 161, 174, .4)",
-      logo: "",
-      // puzzle: require('../assets/imgs/jc.png'),
       ncolor: "#64a1ae",
       color: "rgba(100, 161, 174, .7)",
       end: false,
@@ -144,7 +132,6 @@ const Show = (props) => {
       bg: "paper6",
       bgcolor: "rgba(100, 161, 174, .4)",
       logo: "",
-      // puzzle: require('../assets/imgs/jc.png'),
       ncolor: "#64a1ae",
       color: "rgba(100, 161, 174, .7)",
       end: true,
@@ -157,11 +144,10 @@ const Show = (props) => {
       bg: "paper7",
       bgcolor: "rgba(203, 139, 65, .4)",
       logo: "",
-      // puzzle: require('../assets/imgs/xf.png'),
       ncolor: "#cb8b41",
       color: "rgba(203, 139, 65, .7)",
       end: true,
-    context: <div>本学期<br />你们寝室的<br />月平均用电量为{data.page_7.elec_expense ? data.page_7.elec_expense : "没找到哦"}度<br />{data.page_7.elec_expense > 200 ? <div>爱用电的寝室,生活一定不会太单调</div>:data.page_7.elec_expense < 35 ?<div>用电理性的你们,一定很擅长生活</div>:<div>恭喜获得<br />"南大用电标准寝室"称号</div>}</div>
+    context: <div>本学期<br />你们寝室的<br />月平均用电量为{data.page5.elec_expense ? data.page5.elec_expense : "没找到哦"}度<br />{data.page5.elec_expense > 200 ? <div>爱用电的寝室,生活一定不会太单调</div>:data.page5.elec_expense < 35 ?<div>用电理性的你们,一定很擅长生活</div>:<div>恭喜获得<br />"南大用电标准寝室"称号</div>}</div>
     },
     {
       id: 8,
@@ -169,7 +155,6 @@ const Show = (props) => {
       bg: "paper8",
       bgcolor: "rgba(169,169,169, .4)",
       logo: "",
-      // puzzle: require('../assets/imgs/ys.png'),
       ncolor: "#a9a9a9",
       color: "rgba(169,169,169, .7)",
       end: false,
@@ -181,7 +166,6 @@ const Show = (props) => {
       bg: "paper8",
       bgcolor: "rgba(169,169,169, .4)",
       logo: "",
-      // puzzle: require('../assets/imgs/ys.png'),
       ncolor: "#a9a9a9",
       color: "rgba(169,169,169, .7)",
       end: true,

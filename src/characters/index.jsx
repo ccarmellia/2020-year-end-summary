@@ -16,12 +16,12 @@ class Characters extends React.Component {
   componentWillMount() {
     if (localStorage.getItem("papers") !== null) {
       let data = JSON.parse(localStorage.getItem("papers"))
-      if(data.page_4.page_4_data.gpa_rank !== null) {
-        if(data.page_4.page_4_data.gpa_rank <= 5) {
+      if(data.page4.page_4_data.gpa_rank !== null) {
+        if(data.page4.page_4_data.gpa_rank <= 5) {
           this.setState({
             show1: require("../assets/imgs/xffn.png")
           })
-        } else if (data.page_4.page_4_data.gpa_rank <= 30 && data.page_4.page_4_data.gpa_rank > 5) {
+        } else if (data.page4.page_4_data.gpa_rank <= 30 && data.page_4.page_4_data.gpa_rank > 5) {
           this.setState({
             show1: require("../assets/imgs/jjlr.png")
           })
@@ -32,8 +32,8 @@ class Characters extends React.Component {
         }
       }
       // 课时排名
-      if(data.page_3.course_hours_defeat !== null) {
-        if(data.page_3.course_hours_defeat > 50) {
+      if(data.page3.course_hours_defeat !== null) {
+        if(data.page3.course_hours_defeat > 50) {
           this.setState({
             show: require("../assets/imgs/bsxxj.png")
           })
@@ -44,8 +44,8 @@ class Characters extends React.Component {
         }
       }
       // 生活费
-      if(data.page_7.elec_expense !== null) {
-        if(data.page_7.elec_expense > 202) {
+      if(data.page5.elec_expense !== null) {
+        if(data.page5.elec_expense > 202) {
           this.setState({
             show3: require("../assets/imgs/gdqbydx.png")
           })
@@ -55,12 +55,12 @@ class Characters extends React.Component {
           })
         }
       }
-      if(data.page_1.join_year !== null) {
-        if(data.page_1.join_year == 2020) {
+      if(data.page1.join_year !== null) {
+        if(data.page1.join_year == 2020) {
           this.setState({
             show2: require("../assets/imgs/tjhdxs.png")
           })
-        } else if (data.page_1.join_year == 2018) {
+        } else if (data.page1.join_year == 2018) {
           this.setState({
             show2: require("../assets/imgs/ygkbqn.png")
           })
@@ -71,7 +71,7 @@ class Characters extends React.Component {
         }
       }
     }
-    axios.get("https://os.ncuos.com/api/h5/data", { headers: {Authorization: `passport ${localStorage.getItem("token")}`} }).then(
+    axios.get("https://annual-review-api.ncuos.com/data", { headers: {Authorization: `passport ${localStorage.getItem("token")}`} }).then(
       res => {
         if(res.data.status == 0) {
           this.setState({
@@ -95,8 +95,8 @@ class Characters extends React.Component {
             }
           }
           // 课时排名
-          if(data.page_3.course_hours_defeat !== null) {
-            if(data.page_3.course_hours_defeat > 50) {
+          if(data.page3.course_hours_defeat !== null) {
+            if(data.page3.course_hours_defeat > 50) {
               this.setState({
                 show: require("../assets/imgs/bsxxj.png")
               })
@@ -107,8 +107,8 @@ class Characters extends React.Component {
             }
           }
           // 生活费
-          if(data.page_7.elec_expense !== null) {
-            if(data.page_7.elec_expense > 202) {
+          if(data.page5.elec_expense !== null) {
+            if(data.page5.elec_expense > 202) {
               this.setState({
                 show3: require("../assets/imgs/gdqbydx.png")
               })
@@ -118,12 +118,12 @@ class Characters extends React.Component {
               })
             }
           }
-          if(data.page_1.join_year !== null) {
-            if(data.page_1.join_year == 2020) {
+          if(data.page1.join_year !== null) {
+            if(data.page1.join_year == 2020) {
               this.setState({
                 show2: require("../assets/imgs/tjhdxs.png")
               })
-            } else if (data.page_1.join_year == 2018) {
+            } else if (data.page1.join_year == 2018) {
               this.setState({
                 show2: require("../assets/imgs/ygkbqn.png")
               })
