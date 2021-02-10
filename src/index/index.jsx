@@ -2,7 +2,6 @@ import React, {useState, useEffect} from 'react';
 import './index.css'
 import Loading from "../components/loading"
 import {Link} from 'react-router-dom'
-import Miracle from 'incu-webview'
 import Loadable from "react-loadable"
 const Index = () => {
   const [flag, setFlag] = useState(true)

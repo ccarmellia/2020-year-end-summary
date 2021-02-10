@@ -3,7 +3,6 @@ import './index.css'
 import Loading from "../components/loading"
 import {Link} from "react-router-dom"
 import axios from "axios"
-import Miracle from "incu-webview"
 const opp = Math.round(Math.round(Math.random() * 30 + 10) / 10)
 class Characters extends React.Component {
   state = {

@@ -1,5 +1,4 @@
-import React, {useEffect} from 'react'
-import Papers from './papers'
+import React from 'react'
 import { Show } from "./show";
 import Loading from "../components/loading"
 import Loadable from "react-loadable"

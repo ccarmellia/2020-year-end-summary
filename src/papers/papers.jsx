@@ -2,8 +2,7 @@ import React, { useState, Suspense, useEffect, useContext } from "react";
 import Loading from "../components/loading";
 import "./paper.css";
 import axios from "axios";
-import { showContext, UPDATE_SHOW, UPDATE_INDEX } from "./show";
-import papers from "../utils/data";
+import { showContext, UPDATE_SHOW } from "./show";
 const Papers = (props) => {
   const { show, dispatch } = useContext(showContext);
   const [paper, setPaper] = useState([]);

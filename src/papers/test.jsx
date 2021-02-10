@@ -1,7 +1,6 @@
-import React, {useState, useContext, useEffect,Suspense} from 'react'
+import React, {useContext} from 'react'
 import './paper.css'
-import papers from '../utils/data'
-import {showContext, UPDATE_SHOW, UPDATE_INDEX} from './show'
+import {showContext, UPDATE_INDEX} from './show'
 import Loading from "../components/loading"
 const Show = (props) => {
   const {show, dispatch} = useContext(showContext)
