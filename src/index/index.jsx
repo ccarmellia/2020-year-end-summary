@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import './index.css'
 import Loading from "../components/loading"
+import Miracle from "incu-webview"
 import {Link} from 'react-router-dom'
 import Loadable from "react-loadable"
 const Index = () => {

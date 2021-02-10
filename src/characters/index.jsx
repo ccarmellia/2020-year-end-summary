@@ -1,6 +1,7 @@
 import React, {Suspense} from "react"
 import './index.css'
 import Loading from "../components/loading"
+import Miracle from "incu-webview"
 import {Link} from "react-router-dom"
 import axios from "axios"
 const opp = Math.round(Math.round(Math.random() * 30 + 10) / 10)
