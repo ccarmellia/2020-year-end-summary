@@ -22,7 +22,7 @@ body {
   font-family: jinkai;
   position: static;
 }
-.puzzle {
+/* .puzzle {
   visibility: hidden;
   position: absolute;
   z-index: 999;
@@ -30,7 +30,7 @@ body {
   top: 18vh;
   width: 33vw;
   height: auto;
-}
+} */
 #paper-bg {
   visibility: hidden;
 }
@@ -118,7 +118,7 @@ body {
   font-family: jinkai;
   font-weight: bold;
   padding: 45vw 14vw 12vw;
-  padding-left: 15%;
+  padding-left: 19%;
   font-size: 4.5vw;
   line-height: 4vh;
 }
