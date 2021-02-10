@@ -115,7 +115,7 @@ const Papers = (props) => {
               <br />
               比全校
               {data.page3.course_hours_defeat !== null
-                ? parseInt(data.page3.course_hours_defeat)
+                ? parseFloat(data.page3.course_hours_defeat)*100
                 : "没找到哦"}
               %<br />
               的同学更深
@@ -133,7 +133,7 @@ const Papers = (props) => {
           color: "rgba(216, 195, 76, .7)",
           end: false,
           context:
-            Boolean(data.page4.if_grade_20) === true ? (
+            Boolean(data.page4.is_grade_20) == true ? (
               <div>
                 在已经公布的期末成绩里
                 <br />
@@ -183,7 +183,7 @@ const Papers = (props) => {
           color: "rgba(216, 195, 76, .7)",
           end: true,
           context:
-            Boolean(data.page4.if_grade_20) === true ? (
+            Boolean(data.page4.is_grade_20) == true ? (
               <div>
                 最高的那门
                 {data.page4.page_4_data.top_three_courses[0].class_name !== null
@@ -421,7 +421,7 @@ const Papers = (props) => {
               你们寝室的
               <br />
               月平均用电量为
-              {data.page5.elec_expense ? data.page5.elec_expense : "没找到哦"}度
+              {data.page5.elec_expenses ? data.page5.elec_expenses : "没找到哦"}度
               <br />
               在本校
               <br />

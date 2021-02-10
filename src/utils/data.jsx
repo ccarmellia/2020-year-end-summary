@@ -127,7 +127,7 @@
 //           "total_course_hours": 316
 //       },
 //       "page4": {
-//           "if_grade_20": true,
+//           "is_grade_20": true,
 //           "page4_data": {
 //               "course_defeat_rank": "90.19",
 //               "top_three_courses": [
@@ -147,7 +147,7 @@
 //           }
 //       },
 //       "page5": {
-//           "elec_expense": "85.68"
+//           "elec_expenses": "85.68"
 //       }
 //   }
 // localStorage.setItem("papers", JSON.stringify(testPaper))
@@ -203,7 +203,7 @@
 //     ncolor: "#d8c34c",
 //     color: "rgba(216, 195, 76, .7)",
 //     end: false,
-//     context: Boolean(data.page4.if_grade_20) === true ? <div>在已经公布的期末成绩里,<br />你考的最好的课程有：{data.page4.page_4_data.top_three_courses.map((item, index)=>(<span key={index}><br />{item.class_name}</span>))}</div> : <div>星光不负赶路人。<br />高达{data.page4.page_4_data.credits_taken}的学分<br />没有辜负你。<br />在专业排名前{data.page4.page_4_data.gpa_rank}%<br />{data.page4.page_4_data.gpa}平均绩点<br />也在肯定着你的努力</div>
+//     context: Boolean(data.page4.is_grade_20) === true ? <div>在已经公布的期末成绩里,<br />你考的最好的课程有：{data.page4.page_4_data.top_three_courses.map((item, index)=>(<span key={index}><br />{item.class_name}</span>))}</div> : <div>星光不负赶路人。<br />高达{data.page4.page_4_data.credits_taken}的学分<br />没有辜负你。<br />在专业排名前{data.page4.page_4_data.gpa_rank}%<br />{data.page4.page_4_data.gpa}平均绩点<br />也在肯定着你的努力</div>
 //   },
 //   {
 //     id: 3,
@@ -215,7 +215,7 @@
 //     ncolor: "#d8c34c",
 //     color: "rgba(216, 195, 76, .7)",
 //     end: false,
-//     context: Boolean(data.page4.if_grade_20) === true ? <div>最高的那门{data.page4.page_4_data.top_three_courses[0].class_name}<br />超过了全专业{data.page4.page_4_data.course_defeat_rank}%的同学<br />不用担心啦,<br />这次期末一定能过</div> : <div>不知不觉中,<br />你已经修满了{data.page4.page_4_data.credits_taken}个学分<br />{data.page4.page_4_data.gpa}的平均绩点,<br />为你的大学生活,<br />留下了珍贵的足迹。<br />加油！<br />未来的你,<br />一定还有着更好的模样</div>
+//     context: Boolean(data.page4.is_grade_20) === true ? <div>最高的那门{data.page4.page_4_data.top_three_courses[0].class_name}<br />超过了全专业{data.page4.page_4_data.course_defeat_rank}%的同学<br />不用担心啦,<br />这次期末一定能过</div> : <div>不知不觉中,<br />你已经修满了{data.page4.page_4_data.credits_taken}个学分<br />{data.page4.page_4_data.gpa}的平均绩点,<br />为你的大学生活,<br />留下了珍贵的足迹。<br />加油！<br />未来的你,<br />一定还有着更好的模样</div>
 //   },
 //   {
 //     id: 4,
@@ -312,7 +312,7 @@
 //     ncolor: "#cb8b41",
 //     color: "rgba(203, 139, 65, .7)",
 //     end: true,
-//     context: <div>本学期,<br />你们寝室的<br />月平均用电量为{data.page5.elec_expense}度。<br />在本校<br />月平均用电量100度以上的爱用电的寝室,<br />生活一定不会太单调</div>
+//     context: <div>本学期,<br />你们寝室的<br />月平均用电量为{data.page5.elec_expenses}度。<br />在本校<br />月平均用电量100度以上的爱用电的寝室,<br />生活一定不会太单调</div>
 //   },
 //   {
 //     id: 8,

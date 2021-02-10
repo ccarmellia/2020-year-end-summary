@@ -38,7 +38,7 @@ const Show = (props) => {
       ncolor: "#6fa16a",
       color: "rgba(111, 161, 106, .7)",
       end: true,
-      context: <div>关于课堂的模样<br />你的体会或许<br />比全校{data.page3.course_hours_defeat!==null?parseInt(data.page3.course_hours_defeat):"没找到哦"}%<br />的同学更深</div>
+      context: <div>关于课堂的模样<br />你的体会或许<br />比全校{data.page3.course_hours_defeat!==null?parseFloat(data.page3.course_hours_defeat)*100:"没找到哦"}%<br />的同学更深</div>
     },
     {
       id: 3,
@@ -49,7 +49,7 @@ const Show = (props) => {
       ncolor: "#d8c34c",
       color: "rgba(216, 195, 76, .7)",
       end: false,
-      context: Boolean(data.page4.if_grade_20) === true ? <div>在已经公布的期末成绩里<br />你考的最好的课程有：{data.page4.page_4_data.top_three_courses!==null?data.page4.page_4_data.top_three_courses.map((item, index)=>(<span key={index}><br />{item.class_name}</span>)):"没找到哦"}</div> : <div>星光不负赶路人<br />高达{data.page4.page_4_data.credits_taken!==null ? data.page4.page_4_data.credits_taken:"没找到哦"}的学分<br />没有辜负你<br />这个学期的课业圆满完成<br />{data.page4.page_4_data.gpa!==null ? data.page4.page_4_data.gpa: "没找到哦"}平均绩点<br />也在肯定着你的努力</div>
+      context: Boolean(data.page4.is_grade_20) === true ? <div>在已经公布的期末成绩里<br />你考的最好的课程有：{data.page4.page_4_data.top_three_courses!==null?data.page4.page_4_data.top_three_courses.map((item, index)=>(<span key={index}><br />{item.class_name}</span>)):"没找到哦"}</div> : <div>星光不负赶路人<br />高达{data.page4.page_4_data.credits_taken!==null ? data.page4.page_4_data.credits_taken:"没找到哦"}的学分<br />没有辜负你<br />这个学期的课业圆满完成<br />{data.page4.page_4_data.gpa!==null ? data.page4.page_4_data.gpa: "没找到哦"}平均绩点<br />也在肯定着你的努力</div>
     },
     {
       id: 3,
@@ -59,7 +59,7 @@ const Show = (props) => {
       ncolor: "#d8c34c",
       color: "rgba(216, 195, 76, .7)",
       end: true,
-      context: Boolean(data.page4.if_grade_20) === true ? <div>最高的那门{data.page4.page_4_data.top_three_courses[0].class_name!==null ? data.page4.page_4_data.top_three_courses[0].class_name : "没找到哦"}<br />超过了全专业{data.page4.page_4_data.course_defeat_rank!==null ? data.page4.page_4_data.course_defeat_rank : "没找到哦"}%的同学<br />不用担心啦<br />这次期末一定能过</div> : <div>不知不觉中<br />你已经修满了{data.page4.page_4_data.credits_taken!==null?data.page4.page_4_data.credits_taken:"没找到哦"}个学分<br />{data.page4.page_4_data.gpa!==null?data.page4.page_4_data.gpa:"没找到哦"}的平均绩点<br />为你的大学生活<br />留下了珍贵的足迹<br />加油！<br />未来的你<br />一定还有着更好的模样</div>
+      context: Boolean(data.page4.is_grade_20) === true ? <div>最高的那门{data.page4.page_4_data.top_three_courses[0].class_name!==null ? data.page4.page_4_data.top_three_courses[0].class_name : "没找到哦"}<br />超过了全专业{data.page4.page_4_data.course_defeat_rank!==null ? data.page4.page_4_data.course_defeat_rank : "没找到哦"}%的同学<br />不用担心啦<br />这次期末一定能过</div> : <div>不知不觉中<br />你已经修满了{data.page4.page_4_data.credits_taken!==null?data.page4.page_4_data.credits_taken:"没找到哦"}个学分<br />{data.page4.page_4_data.gpa!==null?data.page4.page_4_data.gpa:"没找到哦"}的平均绩点<br />为你的大学生活<br />留下了珍贵的足迹<br />加油！<br />未来的你<br />一定还有着更好的模样</div>
     },
     {
       id: 4,
@@ -147,7 +147,7 @@ const Show = (props) => {
       ncolor: "#cb8b41",
       color: "rgba(203, 139, 65, .7)",
       end: true,
-    context: <div>本学期<br />你们寝室的<br />月平均用电量为{data.page5.elec_expense ? data.page5.elec_expense : "没找到哦"}度<br />{data.page5.elec_expense > 200 ? <div>爱用电的寝室,生活一定不会太单调</div>:data.page5.elec_expense < 35 ?<div>用电理性的你们,一定很擅长生活</div>:<div>恭喜获得<br />"南大用电标准寝室"称号</div>}</div>
+    context: <div>本学期<br />你们寝室的<br />月平均用电量为{data.page5.elec_expenses ? data.page5.elec_expenses : "没找到哦"}度<br />{data.page5.elec_expenses > 200 ? <div>爱用电的寝室,生活一定不会太单调</div>:data.page5.elec_expenses < 35 ?<div>用电理性的你们,一定很擅长生活</div>:<div>恭喜获得<br />"南大用电标准寝室"称号</div>}</div>
     },
     {
       id: 8,

@@ -44,8 +44,8 @@ class Characters extends React.Component {
         }
       }
       // 生活费
-      if(data.page5.elec_expense !== null) {
-        if(data.page5.elec_expense > 202) {
+      if(data.page5.elec_expenses !== null) {
+        if(data.page5.elec_expenses > 202) {
           this.setState({
             show3: require("../assets/imgs/gdqbydx.png")
           })
@@ -60,7 +60,7 @@ class Characters extends React.Component {
           this.setState({
             show2: require("../assets/imgs/tjhdxs.png")
           })
-        } else if (data.page1.join_year == 2018) {
+        } else if (data.page1.join_year == 2019) {
           this.setState({
             show2: require("../assets/imgs/ygkbqn.png")
           })
@@ -107,8 +107,8 @@ class Characters extends React.Component {
             }
           }
           // 生活费
-          if(data.page5.elec_expense !== null) {
-            if(data.page5.elec_expense > 202) {
+          if(data.page5.elec_expenses !== null) {
+            if(data.page5.elec_expenses > 202) {
               this.setState({
                 show3: require("../assets/imgs/gdqbydx.png")
               })
@@ -123,7 +123,7 @@ class Characters extends React.Component {
               this.setState({
                 show2: require("../assets/imgs/tjhdxs.png")
               })
-            } else if (data.page1.join_year == 2018) {
+            } else if (data.page1.join_year == 2019) {
               this.setState({
                 show2: require("../assets/imgs/ygkbqn.png")
               })
