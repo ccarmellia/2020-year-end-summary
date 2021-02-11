@@ -310,7 +310,7 @@ const Show = (props) => {
     <div>
       <div id="test-loading"><Loading /></div>
       <div id="paper-show" style={{visibility: "hidden"}}>
-        <img id="puzzle" src={papers[index].puzzle} className="puzzle"></img>
+        <img id="puzzle" src={papers[index].puzzle} className="puzzle" style={{display:"none"}}></img>
         <div style={{display: "flex", justifyContent: "center", alignItems: "center"}} onClick={papers[index].end ? () =>{dispatch({ type: UPDATE_INDEX, show: { index: show.index+1, show: false, play: show.play }})} : () => {dispatch({ type: UPDATE_INDEX, show: { index: show.index+1, show: show.show , play: false}});start1()}}>
         <img src="http://antelope.fun/nd.gif" className="paper-container" id="paper-container"></img>
         <div className={papers[index].bg} id="paper-bg">
